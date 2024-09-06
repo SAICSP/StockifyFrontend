@@ -3,7 +3,7 @@ function Education() {
         <div className="container ">
             <div className="row mb-5 mt-5">
                 <div className="col">
-                    <img src="public/media/images/education.svg" alt="" />
+                    <img src="/media/images/education.svg" alt="" />
                 </div>
                 <div className="col mt-5">
                     <h2 className="mt-5 mb-5">Free and open market education</h2>

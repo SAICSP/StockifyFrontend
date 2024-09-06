@@ -22,10 +22,10 @@ function LeftImage({
           </div>
           <div>
             <a href={googlePlay} className="mx-5">
-              <img src="public/media/images/googlePlayBadge.svg" alt="" />
+              <img src="/media/images/googlePlayBadge.svg" alt="" />
             </a>
             <a href={appStore}>
-              <img src="public/media/images/appstoreBadge.svg" alt="" />
+              <img src="/media/images/appstoreBadge.svg" alt="" />
             </a>
           </div>
         </div>
