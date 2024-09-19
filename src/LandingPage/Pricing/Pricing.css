@@ -1,0 +1,50 @@
+/* Base styles for the container and items */
+.container {
+    overflow: hidden;
+    /* Ensure no overflow during animation */
+}
+
+.pricing-item {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Start from below */
+    transition: opacity 1.5s ease-out, transform 0.8s ease-out;
+}
+
+/* Sequential animation */
+.slide-up-1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+    /* First item starts immediately */
+}
+
+.slide-up-2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+    /* Second item starts after 0.2s */
+}
+
+.slide-up-3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+    /* Third item starts after 0.4s */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pricing-item {
+        transform: translateY(0);
+        /* No sliding effect on mobile */
+    }
+
+    .slide-up-1,
+    .slide-up-2,
+    .slide-up-3 {
+        opacity: 1;
+        transition-delay: 0s;
+        /* Immediate appearance on mobile */
+    }
+}

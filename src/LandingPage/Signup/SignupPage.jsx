@@ -1,7 +1,9 @@
+import Signup from "./Signup";
 function SignupPage() {
+    
     return ( 
         <div className="container">
-            <h1>SignupPage</h1>
+            <h1>Signup on work</h1>
         </div>
      );
 }

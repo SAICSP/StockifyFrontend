@@ -1,0 +1,41 @@
+/* Hero component base styles */
+.hero-left,
+.hero-right {
+    opacity: 0;
+    transform: translateX(-100px);
+    /* Initial state for left column */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hero-right {
+    transform: translateX(100px);
+    /* Initial state for right column */
+}
+
+/* When the component becomes visible */
+.hero-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+    /* Slide in from the left */
+}
+
+.hero-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+    /* Slide in from the right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .hero-left,
+    .hero-right {
+        transform: translateX(0);
+        /* No sliding on mobile */
+    }
+
+    .hero-left.visible,
+    .hero-right.visible {
+        opacity: 1;
+    }
+}

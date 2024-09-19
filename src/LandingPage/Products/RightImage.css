@@ -1,0 +1,30 @@
+/* RightImage.css */
+
+.right-image-container {
+    overflow: hidden;
+    /* Prevent overflow during animation */
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    /* Start from left */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    /* Start from right */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -1,0 +1,33 @@
+/* Pricing component container */
+.pricing-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When the pricing component becomes visible */
+.pricing-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Border and spacing for pricing boxes */
+.pricing-container .border {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .pricing-container .col {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .pricing-container .border {
+        margin-bottom: 20px;
+    }
+}

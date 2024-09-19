@@ -1,0 +1,74 @@
+/* Base styles for the container and images */
+.container {
+    overflow: hidden;
+    /* Ensure no overflow during animation */
+}
+
+.image-container {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Start from below */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Sequential animation */
+.slide-up-1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+    /* First image starts immediately */
+}
+
+.slide-up-2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.2s;
+    /* Second image starts after 0.2s */
+}
+
+.slide-up-3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
+    /* Third image starts after 0.4s */
+}
+
+.slide-up-4 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+    /* Fourth image starts after 0.6s */
+}
+
+.slide-up-5 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+    /* Fifth image starts after 0.8s */
+}
+
+.slide-up-6 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+    /* Sixth image starts after 1s */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-container {
+        transform: translateY(0);
+        /* No sliding effect on mobile */
+    }
+
+    .slide-up-1,
+    .slide-up-2,
+    .slide-up-3,
+    .slide-up-4,
+    .slide-up-5,
+    .slide-up-6 {
+        opacity: 1;
+        transition-delay: 0s;
+        /* Immediate appearance on mobile */
+    }
+}

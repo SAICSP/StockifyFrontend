@@ -9,8 +9,11 @@ import PricingPage from './LandingPage/Pricing/PricingPage'
 import ProductsPage from './LandingPage/Products/ProductsPage'
 import SignupPage from './LandingPage/Signup/SignupPage'
 import NotFound from './NotFound'
+import ReactDOM from 'react-dom/client';
+import 'react-toastify/dist/ReactToastify.css';
 
-createRoot(document.getElementById('root')).render(
+const root=ReactDOM.createRoot(document.getElementById('root'))
+root.render(
   <BrowserRouter>
     <Navbar/>
     <Routes>

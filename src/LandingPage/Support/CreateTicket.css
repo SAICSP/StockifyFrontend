@@ -1,0 +1,47 @@
+/* CreateTicket.css */
+
+.container {
+    overflow: hidden;
+    /* Ensure no overflow during animation */
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Start from below */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sequential delay for each column */
+.col:nth-child(1).visible {
+    transition-delay: 0.2s;
+    /* Delay for the first column */
+}
+
+.col:nth-child(2).visible {
+    transition-delay: 0.4s;
+    /* Delay for the second column */
+}
+
+.col:nth-child(3).visible {
+    transition-delay: 0.6s;
+    /* Delay for the third column */
+}
+
+@media (max-width: 768px) {
+    .slide-up {
+        transform: translateY(0);
+        /* No sliding effect on mobile */
+    }
+
+    .slide-up.visible {
+        opacity: 1;
+        transition-delay: 0s;
+        /* Immediate appearance on mobile */
+    }
+}

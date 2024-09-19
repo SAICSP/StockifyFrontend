@@ -1,0 +1,45 @@
+/* Stats component container */
+.stats-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When the stats component becomes visible */
+.stats-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styling for the links */
+.stats-container a {
+    color: #387ed1;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.stats-container img {
+    width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .stats-container {
+        padding: 20px;
+    }
+
+    .col {
+        text-align: center;
+    }
+
+    .stats-container img {
+        margin-bottom: 20px;
+    }
+
+    a {
+        display: block;
+        margin: 10px 0;
+    }
+}

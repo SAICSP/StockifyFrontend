@@ -1,0 +1,41 @@
+/* Team component base styles */
+.team-left,
+.team-right {
+    opacity: 0;
+    transform: translateX(-100px);
+    /* Initial state for left side */
+    transition: opacity 1.2s ease-out, transform 0.8s ease-out;
+}
+
+.team-right {
+    transform: translateX(100px);
+    /* Initial state for right side */
+}
+
+/* When the content becomes visible */
+.team-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+    /* Slide in from the left */
+}
+
+.team-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+    /* Slide in from the right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    .team-left,
+    .team-right {
+        transform: translateX(0);
+        /* No sliding effect on mobile */
+    }
+
+    .team-left.visible,
+    .team-right.visible {
+        opacity: 1;
+    }
+}

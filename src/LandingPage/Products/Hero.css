@@ -1,0 +1,33 @@
+/* Hero component container */
+.hero-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    background-color: white;
+    /* Ensure background is white */
+    padding: 20px;
+    /* Optional: add padding to ensure content isn't flush against edges */
+    border-radius: 8px;
+    /* Optional: add border-radius for rounded corners */
+}
+
+/* When the component becomes visible */
+.hero-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-container h5 {
+        font-size: 1rem;
+    }
+
+    .hero-container h6 {
+        font-size: 0.9rem;
+    }
+}

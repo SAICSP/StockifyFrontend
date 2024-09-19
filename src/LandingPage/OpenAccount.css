@@ -1,0 +1,30 @@
+/* OpenAccount component container */
+.open-account-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When the component becomes visible */
+.open-account-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .open-account-container .btn {
+        width: 100%;
+        margin-left: 0;
+        height: 45px;
+        font-size: medium;
+    }
+
+    .open-account-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .open-account-container h5 {
+        font-size: 1rem;
+    }
+}
