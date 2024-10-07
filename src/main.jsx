@@ -1,4 +1,3 @@
-import { createRoot } from 'react-dom/client'
 import Homepage from './LandingPage/Home/Homepage'
 import Navbar from './LandingPage/Navbar'
 import {Routes,Route,BrowserRouter } from 'react-router-dom'
@@ -11,6 +10,7 @@ import SignupPage from './LandingPage/Signup/SignupPage'
 import NotFound from './NotFound'
 import ReactDOM from 'react-dom/client';
 import 'react-toastify/dist/ReactToastify.css';
+import LoginPage from './LandingPage/Login/LoginPage'
 
 const root=ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -19,6 +19,7 @@ root.render(
     <Routes>
       <Route path='/' element={<Homepage/>}/>
       <Route path='/signup' element={<SignupPage/>}/>
+      <Route path='/login' element={<LoginPage/>}/>
       <Route path='/support' element={<SupportPage/>}/>
       <Route path='/about' element={<AboutPage/>}/>
       <Route path='/pricing' element={<PricingPage/>}/>

@@ -1,10 +1,11 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
+
 function Navbar() {
     return ( 
-        <nav className="navbar navbar-expand-lg bg-body-tertiary  border-bottom" style={{height:"70px",backgroundColor:"#fff"}}>
+        <nav className="navbar navbar-expand-lg bg-body-tertiary border-bottom" style={{ height: "70px", backgroundColor: "#fff" }}>
             <div className="container-fluid">
-                <Link to="/"><img src="/media/images/logo.svg" alt="logo" className="mx-5" style={{width:"15%"}} /></Link>
+                <Link to="/"><img src="/media/images/logo.svg" alt="logo" className="mx-5" style={{ width: "15%" }} /></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -33,4 +34,3 @@ function Navbar() {
 }
 
 export default Navbar;
- 
